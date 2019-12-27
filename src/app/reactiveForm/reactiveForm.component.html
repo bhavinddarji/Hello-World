@@ -1,0 +1,32 @@
+<form [formGroup]="myForm">
+    <div>
+        <input type="text" name="firstname" formControlName="firstname">
+    </div>
+    <div>
+        <input type="text" name="lastname" formControlName="lastname">
+    </div>
+    <div>
+        <input type="email" name="email" formControlName="email">
+    </div>
+    <div>
+        <input type="number" name="mobile" formControlName="mobile">
+    </div>
+    <div>
+        <input type="radio" name="gender" value="Male" formControlName="gender"> Male
+        <input type="radio" name="gender" value="Female" formControlName="gender"> Female
+    </div>
+    <div>
+        <select name="skills" id="skills" formControlName="skills">
+            <option value="ASP.NET">ASP.NET</option>
+            <option value="Java">Java</option>
+            <option value="Angular">Angular</option>
+        </select>
+    </div>
+    <div>
+        <input type="checkbox" name="status" formControlName="status"> Is Active
+    </div>
+    <div>
+        <button type="submit" value="Submit" (click)="FieldData()">Submit</button>
+        <button type="submit" value="Get" (click)="GetField()">Get</button>
+    </div>
+</form>

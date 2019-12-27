@@ -1,0 +1,30 @@
+<div>
+    <h2>Sign Up Form</h2>
+</div>
+
+<div>
+     <div>Name :</div> <div><input type="text" name="name" [(ngModel)]="name"></div>
+</div>
+<div>
+   <div>  Password :</div> <div>  <input type="password" name="password" [(ngModel)]="password"></div>
+</div>
+<div><div>
+Gender :</div> <div> <input type="radio" name="gender" value="Male" checked [(ngModel)]="gender"> Male <br>
+    <input type="radio" name="gender" value="Female" [(ngModel)]="gender"> Female
+</div>
+</div>
+<div>
+    <div> Country :</div> <div> <select name="country" id="country" [(ngModel)]="country">
+        <option value="Select" selected>Select</option>
+        <option value="India">India</option>
+        <option value="USA">USA</option>
+        <option value="UK">UK</option>
+        <option value="China">China</option>
+    </select>
+</div>
+</div>
+<div>
+    <input type="checkbox" name="conformation" value="Allow Turms and conditions" [(ngModel)]="conformation">
+</div>
+<button type="submit" value="submit" (click)="signup()">Submit</button>
+<button type="submit" value="GoToHome" (click)="GotoHome()">Go To Home</button>

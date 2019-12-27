@@ -1,0 +1,38 @@
+<h2>Student Profile</h2>
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Course</th>
+        <th>Skills</th>
+        <th>Educations</th>
+    </tr>
+    <tr>
+        <td>{{name}}</td>
+        <td>{{course}}</td>
+        <td>{{skills}}</td>
+        <td><table border="1">
+            <tr >
+                <th>Degree</th>
+                <th>Complition Year</th>
+                <th>Percentage</th>
+            </tr>
+            <tr *ngFor="let edu of education">
+                <td>{{edu.degree}}</td>
+                <td>{{edu.complitionYear}}</td>
+                <td>{{edu.Percentage}}</td>
+            </tr>
+        </table></td>
+    </tr>
+</table>
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Roll</th>
+    </tr>
+    <tr *ngFor="let student of studentData">
+        <td>{{student.name}}</td>
+        <td>{{student.age}}</td>
+        <td>{{student.rno}}</td>
+    </tr>
+</table>
